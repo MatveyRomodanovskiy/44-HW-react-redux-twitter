@@ -9,10 +9,10 @@ const userSlice = createSlice({
     name: "user",
     reducers: {
         changeName : (state, date) => {
-            state.name = date.payload;
+            state.name = date.payload!= '' ? date.payload : state.name;
         },
         changeAvatar: (state, date) => {
-            state.avatar = date.payload;
+            state.avatar =date.payload!= '' ? date.payload : state.avatar;
         }
     },
 });

@@ -13,6 +13,7 @@ const Stats = () => {
         <div className={'user-stats'}>
             <div>
                 <Avatar/>
+                {user}
             </div>
             <div className={'stats'}>
                 <div
